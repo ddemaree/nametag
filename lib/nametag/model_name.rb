@@ -9,7 +9,18 @@ module Nametag
       @plural = ActiveSupport::Inflector.pluralize(@singular).freeze
       @element = ActiveSupport::Inflector.underscore(ActiveSupport::Inflector.demodulize(self)).freeze
       @collection = ActiveSupport::Inflector.tableize(self).freeze
-      @partial_path = "#{@collection}/#{@element}".freeze
+      #@partial_path = "#{@collection}/#{@element}".freeze
     end
+    
+    def partial_path
+      @partial_path ||= partial_path!
+    end
+    
+    private
+    
+      def partial_path!
+        "#{@collection}/#{@element}".freeze
+      end
+    
   end
 end
