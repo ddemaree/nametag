@@ -1,12 +1,11 @@
 **Nametag** is a simple Rails plugin that allows the default record identifier/model name behavior to be tweaked.
 
     class Heffalump
-    def self.model_name
-      returning(super) do |model_name|
-        model_name.element = "woozle"
-        model_name.partial_path = "#{model_name.collection}/woozle"
-      end
-    end
+        def self.model_name
+          returning(super) do |model_name|
+            model_name.element = "woozle"
+          end
+        end
     end
 
     # In Rails
