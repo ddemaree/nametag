@@ -14,6 +14,6 @@
 
 It's basically a reworking of the existing ActiveSupport code for model naming, tweaked to add setter methods for the various model name attributes. My intention is to submit this as a Rails patch, but I've packaged it as a plugin so I can play with it now.
 
-Please enjoy, and do send any questions/comments/threats to me at david@practical.cc.
+Please enjoy, and do send any questions/comments/threats to me at <david@practical.cc>, or via GitHub.
 
 Copyright (c) 2010 David Demaree, released under the MIT license
